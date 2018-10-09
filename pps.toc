@@ -1,0 +1,24 @@
+\babel@toc {spanish}{}
+\contentsline {section}{\numberline {1}Objetivos}{3}
+\contentsline {section}{\numberline {2}Introducci\IeC {\'o}n}{3}
+\contentsline {section}{\numberline {3}La empresa}{3}
+\contentsline {subsection}{\numberline {3.1}Objetivos de la empresa}{3}
+\contentsline {subsection}{\numberline {3.2}\IeC {\'A}reas}{3}
+\contentsline {subsubsection}{\numberline {3.2.1}Administraci\IeC {\'o}n}{3}
+\contentsline {subsubsection}{\numberline {3.2.2}Gerencia}{3}
+\contentsline {subsubsection}{\numberline {3.2.3}Tecnica}{3}
+\contentsline {subsubsection}{\numberline {3.2.4}Infraestructura}{3}
+\contentsline {section}{\numberline {4}Entorno de trabajo}{3}
+\contentsline {subsection}{\numberline {4.1}GLPI}{4}
+\contentsline {subsection}{\numberline {4.2}WIKI}{4}
+\contentsline {subsection}{\numberline {4.3}programa3}{4}
+\contentsline {section}{\numberline {5}Tareas}{4}
+\contentsline {subsection}{\numberline {5.1}Actualizar WIKI}{4}
+\contentsline {subsection}{\numberline {5.2}Poner en marcha un Fileserver}{4}
+\contentsline {subsection}{\numberline {5.3}Administrar Fileservers}{4}
+\contentsline {subsection}{\numberline {5.4}Firewall Maffra}{4}
+\contentsline {subsection}{\numberline {5.5}Back-Ups}{4}
+\contentsline {subsubsection}{\numberline {5.5.1}rsnapshot}{4}
+\contentsline {subsubsection}{\numberline {5.5.2}Montar Back-Up externo en un Fileserver}{5}
+\contentsline {subsection}{\numberline {5.6}Cambio de nombres}{5}
+\contentsline {section}{\numberline {6}Conclusiones}{5}
