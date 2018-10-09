@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.9)  9 OCT 2018 14:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.9)  9 OCT 2018 16:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -587,8 +587,10 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen104
 \Gin@req@width=\dimen105
+) (./pps.aux
+LaTeX Info: Redefining \. on input line 7.
+LaTeX Info: Redefining \% on input line 7.
 )
-No file pps.aux.
 \openout1 = `pps.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
@@ -721,38 +723,44 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 30.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./undav-logo.png>]
-No file pps.toc.
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./undav-logo.png>] (./pps.
+toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 5.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 5.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 5.
+)
 \tf@toc=\write3
 \openout3 = `pps.toc'.
 
-[2
+ [2
 
 ] [3
 
 ] [4] [5] (./pps.aux
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
-)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+) ) 
 Here is how much of TeX's memory you used:
- 3471 strings out of 492982
- 46288 string characters out of 6134896
- 103750 words of memory out of 5000000
- 6975 multiletter control sequences out of 15000+600000
- 36762 words of font info for 33 fonts, out of 8000000 for 9000
+ 3495 strings out of 492982
+ 46546 string characters out of 6134896
+ 105757 words of memory out of 5000000
+ 6988 multiletter control sequences out of 15000+600000
+ 51825 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,6n,30p,270b,359s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/
-public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/sh
-are/texmf/fonts/type1/public/lm/lmr17.pfb>
-Output written on pps.pdf (5 pages, 193282 bytes).
+ 41i,6n,30p,466b,359s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1
+/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/s
+hare/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public
+/lm/lmri12.pfb>
+Output written on pps.pdf (5 pages, 218209 bytes).
 PDF statistics:
- 36 PDF objects out of 1000 (max. 8388607)
- 23 compressed objects within 1 object stream
+ 40 PDF objects out of 1000 (max. 8388607)
+ 26 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
