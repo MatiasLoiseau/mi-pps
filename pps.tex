@@ -26,7 +26,7 @@
   \centering
    \includegraphics[width=0.2\textwidth]{undav-logo}
   %\caption{Mi Figura}
-  \label{fig:ejemplo}
+  \label{fig:undav-logo}
 \end{figure}
 \maketitle       % genera el título
 \begin{center}
@@ -403,13 +403,7 @@ Connection to maffra.opensa.com.ar closed.
 Se reinició exitosamente el servicio de openvpn y el técnico encargado del ticket confirmó por medio del GLPI que funcionó.
 
 \subsection{Mail Server} 
-Se informa que se calló el servicio de mails en un cliente, el mapa de conexión es:
-
-\begin{center}
-UsuariosDeLaEmpresa ←-→ Mail-Server ←-→ Firewall
-\end{center}
-
-Se entró al Mail Server y no se detectó ningún problema. Se intento reiniciar los servicios y también el servidor. Los logs solo mostraron que los mails eran rechazados pero no daban ningún dato para detectar el problema. Algunos pasos que se dieron para probar posibles errores fueron:
+Se informa que se calló el servicio de mails en un cliente. Se entró al Mail Server y no se detectó ningún problema. Se intento reiniciar los servicios y también el servidor. Los logs solo mostraron que los mails eran rechazados pero no daban ningún dato para detectar el problema. Algunos pasos que se dieron para probar posibles errores fueron:
 
 \begin{lstlisting}
 /etc/init.d/fetchmail restart
@@ -431,7 +425,19 @@ tail -f /var/log/syslog
 cat /home/info/.fetchmailrc 
 \end{lstlisting}
 
-Luego de todos estos intentos fallidos se entro al Firewall y con el iptables se pudo observar que la aplicación fail2ban estaba bloqueando la IP del servidor (se desconoce la causa). La solución fue que se configuro esa aplicación modificando un archivo y agregando el comando
+Luego de todos estos intentos fallidos, se pensó en el camino que recorre un mail para llegar a su destino, el diagrama es el siguiente:
+
+\begin{figure}
+  \centering
+   \includegraphics[width=0.9\textwidth]{ms-diagram}
+  %\caption{Mi Figura}
+  \label{fig:ms-diagram}
+\end{figure}
+
+Figura xx
+
+
+Se entro al Firewall y con el iptables se pudo observar que la aplicación fail2ban estaba bloqueando la IP del servidor (se desconoce la causa). La solución fue que se configuro esa aplicación modificando un archivo y agregando el comando
 
 \begin{lstlisting}
 ignoreip="ip"
