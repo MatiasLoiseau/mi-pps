@@ -31,6 +31,12 @@
 \maketitle       % genera el título
 \begin{center}
 Open Computación S.A 
+
+
+\thinspace\thinspace\thinspace\thinspace\thinspace\thinspace\thinspace\thinspace\thinspace\thinspace\thinspace\thinspace\thinspace\thinspace\thinspace\thinspace\thinspace\thinspace\thinspace\thinspace\thinspace\thinspace\thinspace
+Docente supervisor: Ing. Roberto Mayer
+
+Supervisor externo: <>
 \end{center}
 \cleardoublepage
 
@@ -43,7 +49,7 @@ El presente trabajo consiste en explicar el rol del estudiante en un entorno pro
 \section{Introducción}
 La Práctica Profesional Supervisada (PPS) es una actividad curricular y en consecuencia obligatoria, en la que el/la estudiante realiza actividades contempladas en los alcances del título y relacionadas con el medio real de desempeño de la profesión.
 
-En este caso el estudiante concurre al día de la fecha a la empresa \emph{Open Computación S.A.} en el área de Infraestructura cumpliendo el labor de Administrador de Sistemas Junior. La práctica es supervisada por un profesional en la misma área en la cual trabaja junto al estudiante.
+En este caso se concurre al día de la fecha a la empresa \emph{Open Computación S.A.} en el área de Infraestructura cumpliendo el labor de Administrador de Sistemas Junior. La práctica es supervisada por un profesional en la misma área en la cual trabaja junto al estudiante.
 
 \section{Open Computación S.A.}
 Sus servicios comprenden la consultoría, el diseño, el desarrollo, la instalación, la puesta a punto, y el mantenimiento de sistemas informáticos de todo tipo; en particular, aquellos orientados a Internet.
@@ -67,7 +73,7 @@ La empresa esta dividida en distintas áreas donde llevan a cabo labores especí
 
 La empresa la coordinan 3 personas, una encargada del lado Administrativo, otra encargada de Técnica y la última de Infraestructura.
 
-No se hará profundidad en las áreas no-técnicas porque no cumple con el objetivo del trabajo ya que involucra poco y nada al estudiante.
+No se hará profundidad en las áreas no-técnicas porque no cumple con los objetivos del informe ya que no se desempeñan actividades en estas áreas.
 
 \subsubsection{Administración y recepción}
 En estas áreas no hay mucho que explicar, solo que la presidenta de la empresa es la que esta en continuo interaccióncon las 4 personas que la componen.
@@ -82,7 +88,7 @@ Los técnicos se podrían clasificar como los más multi-tareas de la empresa, y
 Algunos problemas de gestión no los puede resolver el técnico por si solo y deberá llevar la solicitud hacia el área de infraestructura
 
 \subsubsection{Infraestructura}
-En esta área es la que el estudiante se esta desempeñando. Infraestructura es la que tiene más contacto con la gestión de servidores y armado de sistemas de redes para los clientes. Esta área se puede sub-dividir en dos labores que son: el armado de nuevos proyectos y cumplir la función de soporte como administradores de sistemas. La componen 6 personas, incluido el estudiante.
+En esta área es la que está aplicado este informe, Infraestructura la componen 6 personas, es la que tiene más contacto con la gestión de servidores y armado de sistemas de redes para los clientes. Esta área se puede sub-dividir en dos labores que son: el armado de nuevos proyectos y cumplir la función de soporte como administradores de sistemas.
 
 Continuamente se piensa en generar nuevos servicios para poder vender a los clientes, sin estos proyectos, la empresa no se actualiza y puede llegar a estar obsoleta. Este labor consiste en investigar, desarrollar y probar nuevos programas y servicios.
 
@@ -107,12 +113,12 @@ Esta wiki es muy importante, pero es mucho mas importante mantenerla actualizada
 La terminal de linux se usa para acceder al sistema operativo sin utilizar la interfaz gráfica y realizar todo tipo de tareas en modo texto. Los trabajos que se explicarán a continuación son todos en entornos Linux y la gran mayoría tienen la funcionalidad de Firewalls o Fileservers que tienen como host un Linux server (usualmente Ubuntu o Debian) y estos no poseen entorno gráfico asi que la única manera de poder acceder es mediante la terminal.
 
 \section{Tareas}
-Al estudiante se le fueron dando tareas de dificultad gradual para que empiece a conocer la empresa por dentro y como se manejan las solicitudes e inconvenientes.
+Se fueron entragando tareas de dificultad gradual para se empiece a conocer la empresa por dentro y como se manejan las solicitudes e inconvenientes.
 
-A continuación se detallará algunas tareas donde el estudiante trabajó o colaboró.
+A continuación se detallará algunas tareas donde se tuvo participación.
 
 \subsection{Actualizar WIKI}
-Como se dijo anteriormente, la wiki necesita continua actualización de la información. El estudiante fue designado para entrar a cada sistema de servidores o firewall de los clientes y hacer un relevamiento de los servicios que tenía corriendo, el nombre de los equipos, las direcciones IP de los mismos, y otras informaciones importantes relevantes para actualizarlas en la wiki. 
+Como se dijo anteriormente, la wiki necesita continua actualización de la información. Se entró a cada sistema de servidores o firewall de los clientes para hacer un relevamiento de los servicios que tenía corriendo, el nombre de los equipos, las direcciones IP de los mismos, y otras informaciones importantes relevantes para actualizarlas en la wiki. 
 
 \subsubsection{Cambio de nombres}
 Mientras se actualizaba la wiki, se pidió cambiar los nombres de los servidores linux para que se pueda entender que funcionalidad cumple, con solo mirar el nombre. Estos son:
@@ -427,14 +433,16 @@ cat /home/info/.fetchmailrc
 
 Luego de todos estos intentos fallidos, se pensó en el camino que recorre un mail para llegar a su destino, el diagrama es el siguiente:
 
-\begin{figure}
+\begin{figure}[h!]
   \centering
    \includegraphics[width=0.9\textwidth]{ms-diagram}
   %\caption{Mi Figura}
   \label{fig:ms-diagram}
 \end{figure}
 
-Figura xx
+\begin{center}
+\textit{Figure \ref{fig:ms-diagram} Camino que hace la entrada o salida de e-mails.}
+\end{center}
 
 
 Se entro al Firewall y con el iptables se pudo observar que la aplicación fail2ban estaba bloqueando la IP del servidor (se desconoce la causa). La solución fue que se configuro esa aplicación modificando un archivo y agregando el comando
@@ -481,16 +489,16 @@ Si no retorna ningún error significa que se montó exitosamente, y luego se eje
 \end{lstlisting}
 
 \section{Asimilación con la carrera}
-La práctica profesional escogida por el estudiante no abarca la totalidad de los objetivos de la orientación de Sistemas Distribuidos, es decir, solo pocas materias hacen un enfoque al área de sistemas como Sistemas Operativos y materias de la orientación Sistemas de información y gestión empresarial. Sin embargo a lo largo de la carrera el estudiante fue llevado a prueba en el uso de herramientas de software libre y elaboró muchas actividades de forma prácticas, es decir, no solo se dio un enfoque teórico sino que todos los conocimientos adquiridos eran probados y analizados. Esto le dio una confianza y conocimiento extra porque ya había sido entrenado en el uso de las herramientas de trabajo.
+La práctica profesional escogida no abarca la totalidad de los objetivos de la orientación de Sistemas Distribuidos, es decir, solo algunas materias de la carrera hacen un enfoque al área de sistemas como Sistemas Operativos y materias de la orientación Sistemas de información y gestión empresarial. Sin embargo a lo largo de la carrera se fue llevado a prueba en el uso de herramientas de software libre y elaboró muchas actividades de forma prácticas, es decir, que todos los conocimientos teóricos adquiridos eran probados y analizados. Esto gteneró confianza y conocimientos prácticos extra porque ya había sido entrenado en el uso de las herramientas de trabajo.
 
-La elección del estudiante en seguir la orientación de Sistemas Distribuidos le aporto tener una base de redes y arquitecturas que eran necesarias para llevar a cabo la función como Administrador de Sistemas Junior, pero hubiera sido mas adecuada la orientación de Sistemas de información y gestión empresarial, sin embargo, en las materias Redes de Computadoras, Tecnología y Servicios de Redes, Protocolos y Arquitectura de Ruteo y Programación Distribuida 1 y 2 le aportó una base muy grande sobre las interconexiones de los sistemas con los que trabajó. Las materias específicas del área de Sistemas Distribuidos fueron un factor clave para comprender de antemano donde se alojaban y como se comunicaban los sistemas de donde se trabajaba.
+La elección de seguir la orientación de Sistemas Distribuidos aporto una base de arquitecturas y redes. Si bien se destacó que hubiera sido mas adecuada la orientación de Sistemas de información y gestión empresarial, en las materias Redes de Computadoras, Tecnología y Servicios de Redes, Protocolos y Arquitectura de Ruteo y Programación Distribuida 1 y 2 le aportó una base muy grande sobre las interconexiones de los sistemas con los que trabajó. Las materias específicas del área de Sistemas Distribuidos fueron un factor clave para comprender de antemano donde se alojaban y como se comunicaban los sistemas de donde se trabajaba.
 
 \section{Conclusiones}
-El estudiante pudo desplegar sus conocimientos y aptitudes con total normalidad. Se pudo defender a cada problema que le surgía, aunque si bien al principio no conocía del todo el entorno donde trabajaba, se adaptó de manera rápida y eficazmente. Pudo abordar los problemas con un enfoque de ingeniería típica. También operó y mantuvo aplicaciones, equipos y sistemas de procesamiento de la información. 
+Con los conocimientos adquiridos de la carrera de Ingeniería en Informática de la Universidad Nacional de Avellaneda, se pudo defender a cada problema que le surgía, aunque si bien al principio no se conocía del todo el entorno donde trabajaba, se adaptó de manera rápida y eficazmente. Se pudo abordar los problemas con un enfoque de ingeniería típica. También operó y mantuvo aplicaciones, equipos y sistemas de procesamiento de la información. 
 
-Cabe destacar que el ambiente de trabajo fue ameno y solidario. Esto favoreció la salud y estado mental del estudiante. 
+Cabe destacar que el ambiente de trabajo fue ameno y solidario.
 
-Para finalizar, la pasantía del estudiante en esta empresa esta por terminar pero le ofrecieron la renovación por medio de un contrato y el accedió. Esto es la prueba que el trabajo que realizó el estudiante fue todo un éxito.
+Para finalizar, la pasantía en esta empresa esta por terminar pero le ofrecieron la renovación por medio de un contrato y el accedió. Esto es la prueba que el trabajo que realizó el estudiante fue todo un éxito.
 
 \cleardoublepage
 \begin{thebibliography}{9}
@@ -508,11 +516,7 @@ Tatu Ylonen. SSH (Secure Shell), [consultado: 11 de octubre del 2018]. Disponibl
 
 \bibitem{VIM} 
 Colaboradores de Wikipedia. Vim [en línea]. Wikipedia, La enciclopedia libre, 2018 [consultado: 11 de octubre del 2018]. Disponible en \textit{<https://es.wikipedia.org/wiki/Vim>}
-
-
-
 \end{thebibliography}
-
 
 
 \end{document}
